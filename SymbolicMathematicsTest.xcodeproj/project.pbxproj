@@ -11,6 +11,8 @@
 		81C38BED2DE9DAB7008BDC67 /* SymbolicMathematicsTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38BEA2DE9DAB7008BDC67 /* SymbolicMathematicsTestApp.swift */; };
 		81C38BEE2DE9DAB7008BDC67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C38BE62DE9DAB7008BDC67 /* Preview Assets.xcassets */; };
 		81C38BEF2DE9DAB7008BDC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C38BE82DE9DAB7008BDC67 /* Assets.xcassets */; };
+		81C38BF42DE9DC63008BDC67 /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81C38BF32DE9DC63008BDC67 /* LaTeXSwiftUI */; };
+		81C38BF62DE9DD89008BDC67 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38BF52DE9DD89008BDC67 /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		81C38BE82DE9DAB7008BDC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C38BE92DE9DAB7008BDC67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81C38BEA2DE9DAB7008BDC67 /* SymbolicMathematicsTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolicMathematicsTestApp.swift; sourceTree = "<group>"; };
+		81C38BF52DE9DD89008BDC67 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38BF42DE9DC63008BDC67 /* LaTeXSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 		81C38BF02DE9DABF008BDC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81C38BF52DE9DD89008BDC67 /* Circle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			);
 			name = SymbolicMathematicsTest;
 			packageProductDependencies = (
+				81C38BF32DE9DC63008BDC67 /* LaTeXSwiftUI */,
 			);
 			productName = SymbolicMathematicsTest;
 			productReference = 81C38BD52DE9DA02008BDC67 /* SymbolicMathematicsTest.app */;
@@ -129,6 +135,9 @@
 			);
 			mainGroup = 81C38BCC2DE9DA02008BDC67;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				81C38BF22DE9DC63008BDC67 /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 81C38BD62DE9DA02008BDC67 /* Products */;
 			projectDirPath = "";
@@ -158,6 +167,7 @@
 			files = (
 				81C38BEC2DE9DAB7008BDC67 /* ContentView.swift in Sources */,
 				81C38BED2DE9DAB7008BDC67 /* SymbolicMathematicsTestApp.swift in Sources */,
+				81C38BF62DE9DD89008BDC67 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81C38BF22DE9DC63008BDC67 /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/colinc86/LaTeXSwiftUI";
+			requirement = {
+				kind = exactVersion;
+				version = 1.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81C38BF32DE9DC63008BDC67 /* LaTeXSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81C38BF22DE9DC63008BDC67 /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */;
+			productName = LaTeXSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81C38BCD2DE9DA02008BDC67 /* Project object */;
 }
